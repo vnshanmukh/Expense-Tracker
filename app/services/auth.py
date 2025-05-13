@@ -3,7 +3,7 @@ from sqlalchemy.orm import Session
 from fastapi import HTTPException, status
 from datetime import timedelta
 
-from app.models.user import User
+from app.models import User
 from app.schemas.user import UserCreate, UserResponse, Token
 from app.security.jwt import create_access_token
 from app.config import settings
